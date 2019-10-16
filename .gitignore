@@ -1,18 +1,41 @@
+###
+# Unity folders and files
+###
+/saddlebagSaloon/[Aa]ssets/AssetStoreTools*
+/saddlebagSaloon/[Bb]uild/
+/saddlebagSaloon/[Ll]ibrary/
+/saddlebagSaloon/[Ll]ocal[Cc]ache/
+/saddlebagSaloon/[Oo]bj/
+/saddlebagSaloon/[Tt]emp/
+/saddlebagSaloon/[Uu]nityGenerated/
+# file on crash reports
+sysinfo.txt
+# Unity3D generated meta files
+*.pidb.meta
 
-SaddleBag Saloon Shoot-Out/Library/metadata/01/01cd264c206ae482393dc9d04b26eca0
-SaddleBag Saloon Shoot-Out/Library/metadata/01/01cd264c206ae482393dc9d04b26eca0
-SaddleBag Saloon Shoot-Out/Library/metadata/01/01cd264c206ae482393dc9d04b26eca0.info
-SaddleBag Saloon Shoot-Out/Library/metadata/01/01cd264c206ae482393dc9d04b26eca0
-SaddleBag Saloon Shoot-Out/Library/metadata/01/01cd264c206ae482393dc9d04b26eca0.info
-SaddleBag Saloon Shoot-Out/Library/metadata/01/01cd264c206ae482393dc9d04b26eca0
-SaddleBag Saloon Shoot-Out/Library/metadata/01/01cd264c206ae482393dc9d04b26eca0.info
-SaddleBag Saloon Shoot-Out/Library/metadata/01/01e02995805eb483690380a911a657e2
-SaddleBag Saloon Shoot-Out/Library/metadata/01/01e02995805eb483690380a911a657e2.info
-*.info
-*.info
-SaddleBag Saloon Shoot-Out/Library/metadata/01/01e02995805eb483690380a911a657e2
-*.info
-SaddleBag Saloon Shoot-Out/Library/metadata/03/03ffb9844f8d40e8a2f59dd2aff561eb
-SaddleBag Saloon Shoot-Out/Library/metadata/03/03ffb9844f8d40e8a2f59dd2aff561eb.info
-saddlebagSaloon/Temp/UnityLockfile
-saddlebagSaloon/Library/ShaderCache/8/83756a098ee92523b15dfe197c2177ac.bin
+###
+# VS/MD solution and project files
+###
+[Ee]xportedObj/
+*.booproj
+*.csproj
+*.sln
+*.suo
+*.svd
+*.unityproj
+*.user
+*.userprefs
+*.pidb
+.DS_Store
+
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
