@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Low Poly Western Saloon/Demo Scene/Demo Scene.unity
+- path: Assets/Low Poly Western Saloon/Demo Scene/Main Game.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
