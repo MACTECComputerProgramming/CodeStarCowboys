@@ -31,10 +31,16 @@ public class Revolver : MonoBehaviour
         {
             Debug.Log(hit.transform.name);
 
-           largeBottletarget target = hit.transform.GetComponent<largeBottletarget>();
+            largeBottletarget target = hit.transform.GetComponent<largeBottletarget>();
+            timeUpTarget timeTarget = hit.transform.GetComponent<timeUpTarget>();
+
             if(target != null)
             {
                 target.TakeDamage(damage);
+            }
+            else if(timeTarget != null)
+            {
+                timeTarget.TakeDamage(damage);
             }
 
             if (hit.rigidbody != null)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class TargetSpawner : MonoBehaviour
 {
 
-    public GameObject targetPrefab;
+    public GameObject[] targetPrefab;
     public Transform[] spawnPoints;
 
     public float minDelay = .1f;
@@ -29,7 +29,9 @@ public class TargetSpawner : MonoBehaviour
             int spawnIndex = Random.Range(0, spawnPoints.Length);
             Transform spawnPoint = spawnPoints[spawnIndex];
 
-            GameObject spawnedTarget = Instantiate(targetPrefab, spawnPoint.position, spawnPoint.rotation);
+            int spawnTargetIndex = Random.Range(0, targetPrefab.Length);
+
+            GameObject spawnedTarget = Instantiate(targetPrefab[spawnTargetIndex], spawnPoint.position, spawnPoint.rotation);
             Destroy(spawnedTarget, timeBDestroy);
         }
     }
