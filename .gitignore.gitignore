@@ -1,0 +1,41 @@
+###
+# Unity folders and files
+###
+/SaddleBag Saloon Shoot-Out/[Aa]ssets/AssetStoreTools*
+/SaddleBag Saloon Shoot-Out/[Bb]uild/
+/SaddleBag Saloon Shoot-Out/[Ll]ibrary/
+/SaddleBag Saloon Shoot-Out/[Ll]ocal[Cc]ache/
+/SaddleBag Saloon Shoot-Out/[Oo]bj/
+/SaddleBag Saloon Shoot-Out/[Tt]emp/
+/SaddleBag Saloon Shoot-Out/[Uu]nityGenerated/
+# file on crash reports
+sysinfo.txt
+# Unity3D generated meta files
+*.pidb.meta
+
+###
+# VS/MD solution and project files
+###
+[Ee]xportedObj/
+*.booproj
+*.csproj
+*.sln
+*.suo
+*.svd
+*.unityproj
+*.user
+*.userprefs
+*.pidb
+.DS_Store
+
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
