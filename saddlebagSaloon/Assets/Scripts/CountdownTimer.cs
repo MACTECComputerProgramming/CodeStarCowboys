@@ -8,6 +8,8 @@ public class CountdownTimer : MonoBehaviour
 
     float currentTime = 0f;
     float startingTime = 5f;
+    public GameObject SpawnPoints;
+     
 
     [SerializeField]
     Text countDownText;
@@ -29,7 +31,9 @@ public class CountdownTimer : MonoBehaviour
         if (currentTime <= 0)
         {
             countDownText.enabled = false;
-            
+            SpawnPoints.SetActive(true);
         }
+
+        
     }
 }
