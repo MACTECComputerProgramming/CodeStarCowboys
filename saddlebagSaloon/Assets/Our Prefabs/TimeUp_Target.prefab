@@ -123,5 +123,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  startingForce: 5
+  startingForce: 6
   timeBDestroy: 2
