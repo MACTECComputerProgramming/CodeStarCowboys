@@ -20475,7 +20475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &698158802
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20492,7 +20492,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 344, y: 86}
+  m_AnchoredPosition: {x: 512, y: 133}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &698158803
@@ -22279,7 +22279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &824076089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22834,7 +22834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &983320076
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22866,6 +22866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03acd24de1722e94fb2c0ad1a7f603bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 824076088}
+  gameTimer: {fileID: 698158801}
   countDownText: {fileID: 983320078}
 --- !u!114 &983320078
 MonoBehaviour:
