@@ -1,0 +1,57 @@
+﻿using UnityEngine;
+
+public class Revolver : MonoBehaviour
+{
+
+    public float damage = 1f;
+    public float range = 100f;
+    public float impactForce = 30f;
+    
+
+    public Camera fpsCam;
+    //public ParticleSystem muzzleFlash;
+    public GameObject impactEffect;
+
+    
+    
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            
+            //muzzleFlash.Play();
+            Shoot();
+        }
+    }
+
+    void Shoot()
+    {
+        RaycastHit hit;
+       if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        {
+            Debug.Log(hit.transform.name);
+
+            largeBottletarget target = hit.transform.GetComponent<largeBottletarget>();
+            timeUpTarget timeTarget = hit.transform.GetComponent<timeUpTarget>();
+
+            if(target != null)
+            {
+                target.TakeDamage(damage);
+            }
+            else if(timeTarget != null)
+            {
+                timeTarget.TakeDamage(damage);
+            }
+
+            if (hit.rigidbody != null)
+            {
+                hit.rigidbody.AddForce(-hit.normal * impactForce);
+            }
+
+            //GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            //Destroy(impactGO, 2f)
+
+        }
+
+    }
+}
