@@ -1,11 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.Scripting;
+
+
 
 public class largeBottletarget : MonoBehaviour
 {
+      
 
     public float health = 1f;
     Rigidbody rb;
     public float startForce = 15f;
+    public float largeBottlePoints = 20f;
 
     public void Start()
     {
@@ -26,5 +31,6 @@ public class largeBottletarget : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        scoreScript.addUp(largeBottlePoints);
     }
 }
