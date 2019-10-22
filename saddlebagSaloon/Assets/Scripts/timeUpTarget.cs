@@ -9,9 +9,9 @@ public class timeUpTarget : MonoBehaviour
     Rigidbody rb;
     public float startingForce = 15;
     public float timeBDestroy = 2f;
-    
+    public float speedR;
     public float timeAdd;
-    public GameObject timeTarget;
+    
 
     
 
@@ -25,7 +25,8 @@ public class timeUpTarget : MonoBehaviour
 
     private void Update()
     {
-        
+        transform.Rotate(Vector3.up * speedR * Time.deltaTime);
+        Destroy(gameObject, timeBDestroy);
     }
 
     public void TakeDamage(float amount)
@@ -41,7 +42,7 @@ public class timeUpTarget : MonoBehaviour
     void Die()
     {
         
-        Destroy(gameObject, timeBDestroy);
+        Destroy(gameObject);
 
         GameTimer.currentTime = GameTimer.currentTime + timeAdd;
     }
