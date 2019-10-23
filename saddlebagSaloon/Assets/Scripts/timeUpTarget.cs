@@ -9,11 +9,24 @@ public class timeUpTarget : MonoBehaviour
     Rigidbody rb;
     public float startingForce = 15;
     public float timeBDestroy = 2f;
+    public float speedR;
+    public float timeAdd;
+    
+
+    
 
     void Start()
     {
+
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.up * startingForce, ForceMode.Impulse);
+        transform.Rotate(90, 180, 0);
+    }
+
+    private void Update()
+    {
+        transform.Rotate(Vector3.up * speedR * Time.deltaTime);
+        Destroy(gameObject, timeBDestroy);
     }
 
     public void TakeDamage(float amount)
@@ -28,9 +41,9 @@ public class timeUpTarget : MonoBehaviour
     
     void Die()
     {
-        GameTimer gt = new GameTimer();
-        Destroy(gameObject);
-        int newCurrentTime = (int)gt.currentTime + 5;
         
+        Destroy(gameObject);
+
+        GameTimer.currentTime = GameTimer.currentTime + timeAdd;
     }
 }

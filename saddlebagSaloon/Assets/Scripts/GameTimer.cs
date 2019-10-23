@@ -7,12 +7,15 @@ using UnityEngine.SceneManagement;
 public class GameTimer : MonoBehaviour
 {
 
-    public float currentTime = 0f;
-    public float startingTime = 60f;
+    public static float currentTime = 0f;
+    private float startingTime = 60f;
+    
 
     [SerializeField]
     Text gameCountDown;
+
     
+
     void Start()
     {
         currentTime = startingTime;
