@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class largeBottletarget : MonoBehaviour
+public class smallTarget : MonoBehaviour
 {
 
     public float health;
@@ -8,13 +10,14 @@ public class largeBottletarget : MonoBehaviour
     public float timeBDestroy;
     Rigidbody rb;
 
-    public void Start()
+
+    void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.up * startForce, ForceMode.Impulse);
     }
 
-    public void Update()
+    private void Update()
     {
         Destroy(gameObject, timeBDestroy);
     }
@@ -22,16 +25,14 @@ public class largeBottletarget : MonoBehaviour
     public void TakeDamage(float amount)
     {
         health -= amount;
-
-        if(health <= 0f)
+        if (health <= 0f)
         {
             Die();
         }
     }
-
+    
     void Die()
     {
         Destroy(gameObject);
-        ScoreScript.scoreValue += 5;
     }
 }
