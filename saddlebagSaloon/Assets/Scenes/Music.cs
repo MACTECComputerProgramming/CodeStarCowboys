@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Music : MonoBehaviour
 {
-    public AudioClip MainMusic;
+    
     public AudioSource MusicSource;
     void Start()
     {
-        MusicSource.clip = MainMusic;
+        
 
 
     }
@@ -16,10 +16,10 @@ public class Music : MonoBehaviour
     
     void Update()
     {
-        MusicSource.Play();
         if (true)
         {
 
         }
+        
     }
 }
