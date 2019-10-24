@@ -8,10 +8,13 @@ public class smallTarget : MonoBehaviour
     public float health;
     public float timeBDestroy;
     Rigidbody rb;
-
+    public AudioClip GlassBreaking;
+    public AudioSource MusicSource;
+    public Component MeshRender;
 
     void Start()
     {
+        MusicSource.clip = GlassBreaking;
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.up * Random.Range(3f, 7f), ForceMode.Impulse);
     }
@@ -32,7 +35,8 @@ public class smallTarget : MonoBehaviour
     
     void Die()
     {
-        Destroy(gameObject);
+        MusicSource.Play();
+        Destroy(gameObject, 1f);
         ScoreScript.scoreValue += 10;
     }
 }
