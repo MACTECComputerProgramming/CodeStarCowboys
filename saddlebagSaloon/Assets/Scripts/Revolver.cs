@@ -34,7 +34,7 @@ public class Revolver : MonoBehaviour
             largeBottletarget target = hit.transform.GetComponent<largeBottletarget>();
             timeUpTarget timeTarget = hit.transform.GetComponent<timeUpTarget>();
             smallTarget smallTarget = hit.transform.GetComponent<smallTarget>();
-            slowDownTarget slowDownTarget = hit.transform.GetComponent<slowDownTarget>();
+            shotGlass shotGlass = hit.transform.GetComponent<shotGlass>();
 
 
             if(target != null)
@@ -49,10 +49,11 @@ public class Revolver : MonoBehaviour
             {
                 smallTarget.TakeDamage(damage);
             }
-            else if (slowDownTarget != null)
+            else if (shotGlass != null)
             {
-                slowDownTarget.TakeDamage(damage);
+                shotGlass.TakeDamage(damage);
             }
+            
 
             if (hit.rigidbody != null)
             {

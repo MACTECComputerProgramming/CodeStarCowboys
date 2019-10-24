@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 334454720779580543}
   - component: {fileID: 334454720779580536}
   - component: {fileID: 334454720779580542}
+  - component: {fileID: -6605643533145061694}
   m_Layer: 0
   m_Name: smallTarget
   m_TagString: Untagged
@@ -123,5 +124,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  startForce: 8
-  timeBDestroy: 2
+  startForce: 4
+  timeBDestroy: 4
+--- !u!75 &-6605643533145061694
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334454720244289457}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 6, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}

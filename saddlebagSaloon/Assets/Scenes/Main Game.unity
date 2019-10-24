@@ -22289,7 +22289,6 @@ MonoBehaviour:
   - {fileID: 2080328800442503800, guid: e2bd8fa2bfebf524c80738d6c824a66f, type: 3}
   - {fileID: 334454720244289457, guid: f398d0dd7dafaf74f8b0d1bac15ef5c8, type: 3}
   - {fileID: 5246417008639139641, guid: 8675b75bcddee7f4fab3644c39157385, type: 3}
-  - {fileID: 5789800709931689751, guid: 72fec783a6458ce46b6b30ff7ebf5125, type: 3}
   - {fileID: 7640468941529518730, guid: 200359018e002614181dab0353172016, type: 3}
   spawnPoints:
   - {fileID: 1371870015}
@@ -22298,7 +22297,6 @@ MonoBehaviour:
   - {fileID: 235315402}
   - {fileID: 228985933}
   - {fileID: 2110779232}
-  - {fileID: 5789800709932119137, guid: 72fec783a6458ce46b6b30ff7ebf5125, type: 3}
   minDelay: 0.1
   maxDelay: 1
   timeBDestroy: 2
@@ -46598,7 +46596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1943963212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46615,8 +46613,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -590, y: 346}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchoredPosition: {x: -504, y: 179}
+  m_SizeDelta: {x: 400, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943963213
 MonoBehaviour:
@@ -46638,7 +46636,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 70
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -46646,10 +46644,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Score: 00'
 --- !u!222 &1943963214
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -48619,6 +48617,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7881289150486268058, guid: 760b22e10ba6da142a52a09cbcad8289,
+        type: 3}
+      propertyPath: field of view
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 7881289150486268058, guid: 760b22e10ba6da142a52a09cbcad8289,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 760b22e10ba6da142a52a09cbcad8289, type: 3}

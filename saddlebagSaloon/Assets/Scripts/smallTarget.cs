@@ -34,5 +34,6 @@ public class smallTarget : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        ScoreScript.scoreValue += 10;
     }
 }

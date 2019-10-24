@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5246417008225599711}
   - component: {fileID: 1414608725841458578}
   - component: {fileID: 3681741379096406970}
+  - component: {fileID: -6836116356558765390}
   m_Layer: 0
   m_Name: shotGlassFilled
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5246417008639139641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.2312786, y: 0.7082036, z: 4.55884}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,8 +95,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  startForce: 8
-  timeBDestroy: 2
+  startForce: 4
+  timeBDestroy: 4
 --- !u!54 &1414608725841458578
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -125,3 +126,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.045940377, y: 0.072413385, z: 0.045940373}
   m_Center: {x: 9.313226e-10, y: -0.011534324, z: -0.00000008940697}
+--- !u!75 &-6836116356558765390
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246417008639139641}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 6, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
