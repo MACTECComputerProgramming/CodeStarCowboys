@@ -14,6 +14,7 @@ public class slowDownTarget : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.up * startforce, ForceMode.Impulse);
+        transform.Rotate(90, 180, 0);
     }
 
     private void Update()

@@ -2,24 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class smallTarget : MonoBehaviour
+public class reduceTimeTarget : MonoBehaviour
 {
 
     public float health;
     public float timeBDestroy;
+    public float timeSubtract;
     Rigidbody rb;
-    public AudioClip GlassBreaking;
-    public AudioSource MusicSource;
-    public Component MeshRender;
 
     void Start()
     {
-        MusicSource.clip = GlassBreaking;
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * Random.Range(3f, 7f), ForceMode.Impulse);
+        rb.AddForce(transform.up * Random.Range(3f, 6f), ForceMode.Impulse);
     }
 
-    private void Update()
+    void Update()
     {
         Destroy(gameObject, timeBDestroy);
     }
@@ -31,12 +28,14 @@ public class smallTarget : MonoBehaviour
         {
             Die();
         }
+        void Die()
+        {
+            Destroy(gameObject);
+            ScoreScript.scoreValue -= 10;
+            GameTimer.currentTime = GameTimer.currentTime -= timeSubtract;
+        }
+
     }
-    
-    void Die()
-    {
-        MusicSource.Play();
-        Destroy(gameObject, 1f);
-        ScoreScript.scoreValue += 10;
-    }
+
+
 }

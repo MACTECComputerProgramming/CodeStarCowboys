@@ -6,15 +6,20 @@ public class shotGlass : MonoBehaviour
 {
 
     public float health;
-    public float startForce;
+    
+    public float timeBDestroy;
     Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * startForce, ForceMode.Impulse);
+        rb.AddForce(transform.up * Random.Range(3f, 7f), ForceMode.Impulse);
     }
 
+    private void Update()
+    {
+        Destroy(gameObject, timeBDestroy);
+    }
     public void TakeDamage(float amount)
     {
         health -= amount;
