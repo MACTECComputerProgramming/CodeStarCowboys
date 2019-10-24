@@ -2,37 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class timeUpTarget : MonoBehaviour
+public class smallTarget : MonoBehaviour
 {
 
-    public float health = 1f;
+    public float health;
+    public float startForce;
+    public float timeBDestroy;
     Rigidbody rb;
-    public float startingForce = 15;
-    public float timeBDestroy = 2f;
-    public float speedR;
-    public float timeAdd;
-    
 
-    
 
     void Start()
     {
-
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * startingForce, ForceMode.Impulse);
-        transform.Rotate(90, 180, 0);
+        rb.AddForce(transform.up * startForce, ForceMode.Impulse);
     }
 
     private void Update()
     {
-        transform.Rotate(Vector3.up * speedR * Time.deltaTime);
         Destroy(gameObject, timeBDestroy);
     }
 
     public void TakeDamage(float amount)
     {
         health -= amount;
-
         if (health <= 0f)
         {
             Die();
@@ -41,9 +33,6 @@ public class timeUpTarget : MonoBehaviour
     
     void Die()
     {
-        
         Destroy(gameObject);
-
-        GameTimer.currentTime = GameTimer.currentTime + timeAdd;
     }
 }
