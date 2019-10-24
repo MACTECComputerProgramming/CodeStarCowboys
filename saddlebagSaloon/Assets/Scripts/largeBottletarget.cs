@@ -4,14 +4,13 @@ public class largeBottletarget : MonoBehaviour
 {
 
     public float health;
-    public float startForce;
     public float timeBDestroy;
     Rigidbody rb;
 
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * startForce, ForceMode.Impulse);
+        rb.AddForce(transform.up * Random.Range(3f, 7f), ForceMode.Impulse);
     }
 
     public void Update()

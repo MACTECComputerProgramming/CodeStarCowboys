@@ -7,7 +7,6 @@ public class timeUpTarget : MonoBehaviour
 
     public float health = 1f;
     Rigidbody rb;
-    public float startingForce = 15;
     public float timeBDestroy = 2f;
     public float speedR;
     public float timeAdd;
@@ -19,7 +18,7 @@ public class timeUpTarget : MonoBehaviour
     {
 
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * startingForce, ForceMode.Impulse);
+        rb.AddForce(transform.up * Random.Range(3f, 7f), ForceMode.Impulse);
         transform.Rotate(90, 180, 0);
     }
 
