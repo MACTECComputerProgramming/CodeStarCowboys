@@ -2,19 +2,23 @@
 
 public class largeBottletarget : MonoBehaviour
 {
+
+    public float health;
+    public float timeBDestroy;
+    Rigidbody rb;
     public AudioClip BreakingGlass;
     public AudioSource MusicSource;
     public Component MeshRender;
-    public float health = 1f;
-    Rigidbody rb;
-    public float startForce = 15f;
-
     public void Start()
     {
         MusicSource.clip = BreakingGlass;
-
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * startForce, ForceMode.Impulse);
+        rb.AddForce(transform.up * Random.Range(3f, 7f), ForceMode.Impulse);
+    }
+
+    public void Update()
+    {
+        Destroy(gameObject, timeBDestroy);
     }
 
     public void TakeDamage(float amount)
@@ -23,17 +27,17 @@ public class largeBottletarget : MonoBehaviour
 
         if(health <= 0f)
         {
-            Die();
-            MusicSource.Play();
-
             
+            Die();
             
         }
     }
 
     void Die()
-    {   
+    {   ScoreScript.scoreValue += 5;
+        MusicSource.Play();
         Destroy(MeshRender);
         Destroy(gameObject, 1f);
+        
     }
 }
