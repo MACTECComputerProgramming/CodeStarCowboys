@@ -6337,9 +6337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96de8423ed309641836d3d9eaa84957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theName: 
-  inputField: {fileID: 825016891}
-  textDisplay: {fileID: 1210729474}
 --- !u!4 &192175142
 Transform:
   m_ObjectHideFlags: 0
@@ -43681,13 +43678,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1880448458}
           m_MethodName: SceneLoader
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
