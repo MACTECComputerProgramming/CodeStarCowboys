@@ -7,7 +7,8 @@ public class reduceTimeTarget : MonoBehaviour
 
     public float health;
     public float timeBDestroy;
-    public float timeSubtract;
+    public float timeSub;
+    public float speedR;
     Rigidbody rb;
 
     void Start()
@@ -18,6 +19,7 @@ public class reduceTimeTarget : MonoBehaviour
 
     void Update()
     {
+        transform.Rotate(Vector3.up * speedR * Time.deltaTime);
         Destroy(gameObject, timeBDestroy);
     }
 
@@ -32,7 +34,7 @@ public class reduceTimeTarget : MonoBehaviour
         {
             Destroy(gameObject);
             ScoreScript.scoreValue -= 10;
-            GameTimer.currentTime = GameTimer.currentTime -= timeSubtract;
+            GameTimer.currentTime = GameTimer.currentTime -= timeSub;
         }
 
     }

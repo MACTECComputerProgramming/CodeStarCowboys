@@ -13,7 +13,7 @@ public class largeBottletarget : MonoBehaviour
     {
         MusicSource.clip = BreakingGlass;
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * Random.Range(3f, 7f), ForceMode.Impulse);
+        rb.AddForce(transform.up * Random.Range(3f, 5f), ForceMode.Impulse);
     }
 
     public void Update()

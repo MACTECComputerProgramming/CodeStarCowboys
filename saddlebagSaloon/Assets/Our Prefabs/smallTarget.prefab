@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   timeBDestroy: 4
-  RipCard: {fileID: 8300000, guid: 9c36476cad438214092741644b3eb462, type: 3}
+  GlassBreaking: {fileID: 8300000, guid: e7dd907087ab76242a8896e5eda0b70d, type: 3}
   MusicSource: {fileID: -8085401652830313482}
   MeshRender: {fileID: 334454720246340363}
 --- !u!75 &-6605643533145061694

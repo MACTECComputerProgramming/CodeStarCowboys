@@ -20,7 +20,7 @@ public class timeUpTarget : MonoBehaviour
     {
         MusicSource.clip = RipCard;
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * Random.Range(3f, 7f), ForceMode.Impulse);
+        rb.AddForce(transform.up * Random.Range(3f, 5f), ForceMode.Impulse);
         transform.Rotate(90, 180, 0);
     }
 
