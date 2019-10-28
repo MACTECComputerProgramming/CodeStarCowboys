@@ -6,19 +6,26 @@ public class Music : MonoBehaviour
 {
     
     public AudioSource MusicSource;
+    public AudioClip MainMusic;
     void Start()
     {
-        
+        MusicSource.clip = MainMusic;
 
 
     }
 
     
-    void Update()
+    void FixedUpdate()
     {
-        if (true)
-        {
+        
+        
 
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            
+
+            MusicSource.enabled = !MusicSource.enabled;
+            
         }
         
     }

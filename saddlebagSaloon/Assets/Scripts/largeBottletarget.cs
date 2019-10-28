@@ -37,7 +37,7 @@ public class largeBottletarget : MonoBehaviour
     {   ScoreScript.scoreValue += 5;
         MusicSource.Play();
         Destroy(MeshRender);
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 2f);
         
     }
 }
