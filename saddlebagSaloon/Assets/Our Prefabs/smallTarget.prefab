@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   timeBDestroy: 4
-  GlassBreaking: {fileID: 8300000, guid: b23dca0e99a5fe143a8fe0a125c66213, type: 3}
+  GlassBreaking: {fileID: 8300000, guid: d7f7e288e0288624ab8e01e8e89e5fc5, type: 3}
   MusicSource: {fileID: -8085401652830313482}
   MeshRender: {fileID: 334454720246340363}
 --- !u!75 &-6605643533145061694
@@ -153,7 +153,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.076
   m_Pitch: 1
   Loop: 0
   Mute: 0
