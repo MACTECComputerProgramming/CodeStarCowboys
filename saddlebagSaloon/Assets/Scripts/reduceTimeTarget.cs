@@ -9,10 +9,13 @@ public class reduceTimeTarget : MonoBehaviour
     public float timeBDestroy;
     public float timeSub;
     public float speedR;
+    public AudioClip ChickenCluck;
+    public AudioSource MusicScource;
     Rigidbody rb;
 
     void Start()
     {
+        MusicScource.clip = ChickenCluck;
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.up * Random.Range(3f, 6f), ForceMode.Impulse);
     }
@@ -32,9 +35,10 @@ public class reduceTimeTarget : MonoBehaviour
         }
         void Die()
         {
-            Destroy(gameObject);
             ScoreScript.scoreValue -= 10;
             GameTimer.currentTime = GameTimer.currentTime -= timeSub;
+            MusicScource.Play();
+            Destroy(gameObject);
         }
 
     }

@@ -6,12 +6,15 @@ public class shotGlass : MonoBehaviour
 {
 
     public float health;
-    
     public float timeBDestroy;
+    public AudioClip BreakingGlass;
+    public AudioSource MusicSource;
+    public Component MeshRender;
     Rigidbody rb;
 
     void Start()
     {
+        MusicSource.clip = BreakingGlass;
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.up * Random.Range(3f, 5f), ForceMode.Impulse);
     }
@@ -29,8 +32,10 @@ public class shotGlass : MonoBehaviour
         }
         void Die()
         {
-            Destroy(gameObject);
             ScoreScript.scoreValue += 20;
+            MusicSource.Play();
+            Destroy(MeshRender);
+            Destroy(gameObject, 1f);
         }
     }
     

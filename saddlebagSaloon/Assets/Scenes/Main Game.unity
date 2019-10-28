@@ -22290,7 +22290,7 @@ MonoBehaviour:
   - {fileID: 334454720244289457, guid: f398d0dd7dafaf74f8b0d1bac15ef5c8, type: 3}
   - {fileID: 5246417008639139641, guid: 8675b75bcddee7f4fab3644c39157385, type: 3}
   - {fileID: 7640468941529518730, guid: 200359018e002614181dab0353172016, type: 3}
-  - {fileID: 630503161857637331, guid: 6abddb46a2b3eab4c9e5c191c2367342, type: 3}
+  - {fileID: 571142335681402289, guid: 50f5be37a6b3d694d821fdba75519446, type: 3}
   spawnPoints:
   - {fileID: 1371870015}
   - {fileID: 912078324}

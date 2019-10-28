@@ -34,7 +34,8 @@ public class largeBottletarget : MonoBehaviour
     }
 
     void Die()
-    {   ScoreScript.scoreValue += 5;
+    {
+        ScoreScript.scoreValue += 5;
         MusicSource.Play();
         Destroy(MeshRender);
         Destroy(gameObject, 1f);

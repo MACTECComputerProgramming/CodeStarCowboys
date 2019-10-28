@@ -37,6 +37,7 @@ public class smallTarget : MonoBehaviour
     {
         MusicSource.Play();
         Destroy(gameObject, 1f);
+        Destroy(MeshRender);
         ScoreScript.scoreValue += 10;
     }
 }
