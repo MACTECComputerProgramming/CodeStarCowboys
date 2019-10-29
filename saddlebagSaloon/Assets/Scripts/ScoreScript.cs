@@ -4,19 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
-
-    public static int scoreValue = 0;
+    public static float highScore = 00f;
+    public static float scoreValue = 0f;
     Text score;
 
+    
     // Start is called before the first frame update
-    void Start()
-    {
-        score = GetComponent<Text> ();
-    }
+    
 
     // Update is called once per frame
     void Update()
     {
         score.text = "Score: " + scoreValue;
+    }
+
+    public static float addUp(float points)
+    {
+        scoreValue += points;
+
+        return scoreValue;
     }
 }
