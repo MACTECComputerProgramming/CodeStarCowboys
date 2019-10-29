@@ -10,24 +10,26 @@ public class HighScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScoreScript.highScore = findHighScore(ScoreScript.highScore);
-        PlayerPrefs.SetFloat("HighScore", ScoreScript.highScore);
+        
+
+        if(ScoreScript.scoreValue > PlayerPrefs.GetFloat("HighScore"))
+        {
+            PlayerPrefs.SetFloat("HighScore", ScoreScript.scoreValue);
+            PlayerPrefs.Save();
+        }
+
         PlayerPrefs.Save();
 
+        ScoreScript.highScore = PlayerPrefs.GetFloat("HighScore");
+
+        //PlayerPrefs.SetFloat("HighScore", ScoreScript.highScore);
+        // PlayerPrefs.Save();
+
         highScoreText = GetComponent<Text>();
-        string hsString = PlayerPrefs.GetFloat("HighScore").ToString();
+        string hsString = ScoreScript.highScore.ToString();
         highScoreText.text = hsString;
 
     }
 
-    public float findHighScore(float highscore)
-    {
-        if (ScoreScript.scoreValue > highscore)
-        {
-            highscore = ScoreScript.scoreValue;
-        }
-
-        return highscore;
-    }
-
+   
 }

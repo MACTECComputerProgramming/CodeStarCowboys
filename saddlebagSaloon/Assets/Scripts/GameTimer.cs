@@ -30,7 +30,7 @@ public class GameTimer : MonoBehaviour
         if (currentTime <= 0)
         {
             gameCountDown.enabled = false;
-            SceneManager.LoadScene(4);
+            LoadScene.SceneLoader(3);
         }
 
 
