@@ -2,38 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class timeUpTarget : MonoBehaviour
+public class smallTarget : MonoBehaviour
 {
 
-    public float health = 1f;
+    public float health;
+    public float timeBDestroy;
     Rigidbody rb;
-    public float timeBDestroy = 2f;
-    public float speedR;
-    public float timeAdd;
-    public AudioClip RipCard;
+    public AudioClip GlassBreaking;
     public AudioSource MusicSource;
     public Component MeshRender;
 
-
-
     void Start()
     {
-        MusicSource.clip = RipCard;
+        MusicSource.clip = GlassBreaking;
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.up * Random.Range(3f, 5f), ForceMode.Impulse);
-        transform.Rotate(90, 180, 0);
     }
 
     private void Update()
     {
-        transform.Rotate(Vector3.up * speedR * Time.deltaTime);
         Destroy(gameObject, timeBDestroy);
     }
 
     public void TakeDamage(float amount)
     {
         health -= amount;
-
         if (health <= 0f)
         {
             Die();
@@ -43,9 +36,8 @@ public class timeUpTarget : MonoBehaviour
     void Die()
     {
         MusicSource.Play();
-        Destroy(MeshRender);
         Destroy(gameObject, 1f);
-
-        GameTimer.currentTime = GameTimer.currentTime + timeAdd;
+        Destroy(MeshRender);
+        ScoreScript.scoreValue += 10;
     }
 }

@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class exitSaloon : MonoBehaviour
+public class Music : MonoBehaviour
 {
     // Start is called before the first frame update
-    
-    public void doQuit()
+    void Start()
     {
-        Debug.Log("has quit game");
-        Application.Quit();
-
+        
     }
 
-
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
