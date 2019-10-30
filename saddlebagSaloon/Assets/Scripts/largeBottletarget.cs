@@ -9,11 +9,8 @@ public class largeBottletarget : MonoBehaviour
 
     public float health;
     public float timeBDestroy;
+    public float largeBottlePoints;
     Rigidbody rb;
-
-    public float startForce = 15f;
-    public float largeBottlePoints = 20f;
-
 
     public AudioClip BreakingGlass;
     public AudioSource MusicSource;
