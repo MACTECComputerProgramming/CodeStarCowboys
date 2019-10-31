@@ -7,11 +7,11 @@ public class smallTarget : MonoBehaviour
 
     public float health;
     public float timeBDestroy;
-    Rigidbody rb;
     public AudioClip GlassBreaking;
     public AudioSource MusicSource;
+    public GameObject particleEffect;
     public Component MeshRender;
-
+    Rigidbody rb;
     void Start()
     {
         MusicSource.clip = GlassBreaking;
@@ -35,10 +35,10 @@ public class smallTarget : MonoBehaviour
     
     void Die()
     {
-         MusicSource.Play();
-
-        Destroy(MeshRender);
         ScoreScript.scoreValue += 10;
+        MusicSource.Play();
+        Instantiate(particleEffect, transform.position, Quaternion.identity);
+        Destroy(MeshRender);
         Destroy(gameObject, 1f);
     }
 }

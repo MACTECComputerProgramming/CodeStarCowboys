@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 7515758137234922618}
   m_LocalRotation: {x: 0.70710677, y: 0, z: 0, w: 0.70710677}
   m_LocalPosition: {x: 1.3322144, y: 0.8463166, z: 4.534334}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -130,6 +130,8 @@ MonoBehaviour:
   timeAdd: 5
   RipCard: {fileID: 8300000, guid: 9c36476cad438214092741644b3eb462, type: 3}
   MusicSource: {fileID: 7189972065438315899}
+  particleEffect: {fileID: 5987337488731182934, guid: 5ada708eea6924b41af19bb6bd48c3c0,
+    type: 3}
   MeshRender: {fileID: 1537133879619160446}
 --- !u!75 &8791327994214047053
 ConstantForce:

@@ -10,11 +10,12 @@ public class largeBottletarget : MonoBehaviour
     public float health;
     public float timeBDestroy;
     public float largeBottlePoints;
-    Rigidbody rb;
-
     public AudioClip BreakingGlass;
     public AudioSource MusicSource;
+    public GameObject particleEffect;
     public Component MeshRender;
+    Rigidbody rb;
+
 
     public void Start()
     {
@@ -45,8 +46,8 @@ public class largeBottletarget : MonoBehaviour
 
         
         ScoreScript.scoreValue += ScoreScript.addUp(largeBottlePoints);
-
         ScoreScript.scoreValue += 5;
+        Instantiate(particleEffect, transform.position, Quaternion.identity);
         MusicSource.Play();
         Destroy(MeshRender);
         Destroy(gameObject, 1f);

@@ -99,6 +99,8 @@ MonoBehaviour:
   timeBDestroy: 15
   BreakingGlass: {fileID: 8300000, guid: b23dca0e99a5fe143a8fe0a125c66213, type: 3}
   MusicSource: {fileID: 2826984687833703496}
+  particleEffect: {fileID: 7791394951022670333, guid: 7712471379baff548aff65d1372a0008,
+    type: 3}
   MeshRender: {fileID: 7298128192590863960}
 --- !u!54 &5184886937412741898
 Rigidbody:

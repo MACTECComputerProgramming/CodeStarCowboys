@@ -5,15 +5,15 @@ using UnityEngine;
 public class timeUpTarget : MonoBehaviour
 {
 
-    public float health = 1f;
-    Rigidbody rb;
-    public float timeBDestroy = 2f;
+    public float health;
+    public float timeBDestroy;
     public float speedR;
     public float timeAdd;
     public AudioClip RipCard;
     public AudioSource MusicSource;
+    public GameObject particleEffect;
     public Component MeshRender;
-
+    Rigidbody rb;
 
 
     void Start()
@@ -42,10 +42,10 @@ public class timeUpTarget : MonoBehaviour
     
     void Die()
     {
-        MusicSource.Play();
-        Destroy(MeshRender);
-        Destroy(gameObject, 1f);
-
         GameTimer.currentTime = GameTimer.currentTime + timeAdd;
+        MusicSource.Play();
+        Instantiate(particleEffect, transform.position, Quaternion.identity);
+        Destroy(MeshRender);
+        Destroy(gameObject, 1f);   
     }
 }

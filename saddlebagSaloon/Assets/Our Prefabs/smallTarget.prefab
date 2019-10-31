@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 6202414532456481021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.84754276, y: 0.8419488, z: 4.6158648}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -126,8 +126,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   timeBDestroy: 15
-  GlassBreaking: {fileID: 8300000, guid: da3ed8aad21242f46a952c94fbfc6dad, type: 3}
+  GlassBreaking: {fileID: 8300000, guid: e7dd907087ab76242a8896e5eda0b70d, type: 3}
   MusicSource: {fileID: 3263537997124061145}
+  particleEffect: {fileID: 2930962523094225681, guid: 942e94aa226ecda48b726122267a662a,
+    type: 3}
   MeshRender: {fileID: 2313302418717083915}
 --- !u!75 &4583247840693821241
 ConstantForce:
