@@ -43,7 +43,7 @@ public class largeBottletarget : MonoBehaviour
     void Die()
     {
 
-        Destroy(gameObject);
+        
         ScoreScript.scoreValue += ScoreScript.addUp(largeBottlePoints);
 
         ScoreScript.scoreValue += 5;

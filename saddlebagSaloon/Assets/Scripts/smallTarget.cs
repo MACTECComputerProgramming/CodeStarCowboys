@@ -35,9 +35,10 @@ public class smallTarget : MonoBehaviour
     
     void Die()
     {
-        MusicSource.Play();
-        Destroy(gameObject, 1f);
+         MusicSource.Play();
+
         Destroy(MeshRender);
         ScoreScript.scoreValue += 10;
+        Destroy(gameObject, 1f);
     }
 }

@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   timeBDestroy: 15
-  GlassBreaking: {fileID: 8300000, guid: e7dd907087ab76242a8896e5eda0b70d, type: 3}
+  GlassBreaking: {fileID: 8300000, guid: da3ed8aad21242f46a952c94fbfc6dad, type: 3}
   MusicSource: {fileID: 3263537997124061145}
   MeshRender: {fileID: 2313302418717083915}
 --- !u!75 &4583247840693821241
