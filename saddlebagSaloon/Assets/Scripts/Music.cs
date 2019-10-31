@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Music : MonoBehaviour
 {
-    
+    public bool isPaused;
     public AudioClip MainMusic;
     public AudioSource MusicSource;
 
@@ -16,12 +16,9 @@ public class Music : MonoBehaviour
     
     void Update()
     {
-            
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
+        if (Input.GetKeyDown(KeyCode.M)) {
             MusicSource.enabled = !MusicSource.enabled;
             MusicSource.Play();
-        }
-    }
+      }
+    }    
 }
