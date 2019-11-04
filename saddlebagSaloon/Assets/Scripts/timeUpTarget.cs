@@ -5,6 +5,7 @@ using UnityEngine;
 public class timeUpTarget : MonoBehaviour
 {
 
+<<<<<<< HEAD
     public float health = 1f;
     Rigidbody rb;
     public float startingForce = 15;
@@ -12,6 +13,17 @@ public class timeUpTarget : MonoBehaviour
     public float speedR;
     public float timeAdd;
     
+=======
+    public float health;
+    public float timeBDestroy;
+    public float speedR;
+    public float timeAdd;
+    public AudioClip RipCard;
+    public AudioSource MusicSource;
+    public GameObject particleEffect;
+    public Component MeshRender;
+    Rigidbody rb;
+>>>>>>> Andrew-Payne
 
     
 
@@ -41,9 +53,17 @@ public class timeUpTarget : MonoBehaviour
     
     void Die()
     {
+<<<<<<< HEAD
         
         Destroy(gameObject);
 
         GameTimer.currentTime = GameTimer.currentTime + timeAdd;
+=======
+        GameTimer.currentTime = GameTimer.currentTime + timeAdd;
+        MusicSource.Play();
+        Instantiate(particleEffect, transform.position, Quaternion.identity);
+        Destroy(MeshRender);
+        Destroy(gameObject, 1f);   
+>>>>>>> Andrew-Payne
     }
 }
