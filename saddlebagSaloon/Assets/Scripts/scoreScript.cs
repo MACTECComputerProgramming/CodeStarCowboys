@@ -21,11 +21,4 @@ public class ScoreScript : MonoBehaviour
         
         score.text = "Score: " + scoreValue;
     }
-
-    public static float addUp(float points)
-    {
-        scoreValue += points;
-
-        return scoreValue;
-    }
 }
