@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.Scripting;
+
+
 
 public class largeBottletarget : MonoBehaviour
 {
+      
 
-<<<<<<< HEAD
-    public float health = 1f;
-    Rigidbody rb;
-    public float startForce = 15f;
-=======
     public float health;
     public float timeBDestroy;
     public AudioClip BreakingGlass;
@@ -16,12 +15,17 @@ public class largeBottletarget : MonoBehaviour
     public Component MeshRender;
     Rigidbody rb;
 
->>>>>>> Andrew-Payne
 
     public void Start()
     {
+        MusicSource.clip = BreakingGlass;
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * startForce, ForceMode.Impulse);
+        rb.AddForce(transform.up * Random.Range(3f, 5f), ForceMode.Impulse);
+    }
+
+    public void Update()
+    {
+        Destroy(gameObject, timeBDestroy);
     }
 
     public void TakeDamage(float amount)
@@ -30,20 +34,18 @@ public class largeBottletarget : MonoBehaviour
 
         if(health <= 0f)
         {
+            
             Die();
+            
         }
     }
 
     void Die()
     {
-<<<<<<< HEAD
-        Destroy(gameObject);
-=======
         ScoreScript.scoreValue += 5;
         Instantiate(particleEffect, transform.position, Quaternion.identity);
         MusicSource.Play();
         Destroy(MeshRender);
         Destroy(gameObject, 1f);
->>>>>>> Andrew-Payne
     }
 }

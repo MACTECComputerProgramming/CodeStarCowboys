@@ -5,21 +5,19 @@ public class Revolver : MonoBehaviour
 
     public float damage = 1f;
     public float range = 100f;
-    public float impactForce = 30f;
+    
     
 
     public Camera fpsCam;
-    //public ParticleSystem muzzleFlash;
-    public GameObject impactEffect;
+    public ParticleSystem muzzleFlash;
+    public AudioClip gunFire;
+    public AudioSource soundSource;
 
-    
-    
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            
-            //muzzleFlash.Play();
+            soundSource.clip = gunFire;
             Shoot();
         }
     }
@@ -29,10 +27,15 @@ public class Revolver : MonoBehaviour
         RaycastHit hit;
        if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name);
+            soundSource.Play();
+            muzzleFlash.Play();
 
             largeBottletarget target = hit.transform.GetComponent<largeBottletarget>();
             timeUpTarget timeTarget = hit.transform.GetComponent<timeUpTarget>();
+            smallTarget smallTarget = hit.transform.GetComponent<smallTarget>();
+            shotGlass shotGlass = hit.transform.GetComponent<shotGlass>();
+            reduceTimeTarget reduceTimeTarget = hit.transform.GetComponent<reduceTimeTarget>();
+
 
             if(target != null)
             {
@@ -42,15 +45,18 @@ public class Revolver : MonoBehaviour
             {
                 timeTarget.TakeDamage(damage);
             }
-
-            if (hit.rigidbody != null)
+            else if (smallTarget != null)
             {
-                hit.rigidbody.AddForce(-hit.normal * impactForce);
+                smallTarget.TakeDamage(damage);
             }
-
-            //GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-            //Destroy(impactGO, 2f)
-
+            else if (shotGlass != null)
+            {
+                shotGlass.TakeDamage(damage);
+            }
+            else if (reduceTimeTarget != null)
+            {
+                reduceTimeTarget.TakeDamage(damage);
+            }
         }
 
     }
