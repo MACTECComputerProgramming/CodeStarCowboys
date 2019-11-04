@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
+--- !u!1 &7881289150486268038
+=======
 --- !u!1 &8573622920725276880
+>>>>>>> Andrew-Payne
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +12,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
+  - component: {fileID: 7881289150486268057}
+  - component: {fileID: 7881289150486268058}
+  - component: {fileID: 7881289150486268036}
+  - component: {fileID: 7881289150486268037}
+  - component: {fileID: 7881289150486268059}
+=======
   - component: {fileID: 8573622920725276879}
   - component: {fileID: 8573622920725276876}
   - component: {fileID: 8573622920725276882}
   - component: {fileID: 8573622920725276883}
   - component: {fileID: 8573622920725276877}
+>>>>>>> Andrew-Payne
   m_Layer: 0
   m_Name: Player
   m_TagString: MainCamera
@@ -20,28 +32,48 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+--- !u!4 &7881289150486268057
+=======
 --- !u!4 &8573622920725276879
+>>>>>>> Andrew-Payne
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 7881289150486268038}
+=======
   m_GameObject: {fileID: 8573622920725276880}
+>>>>>>> Andrew-Payne
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.41, y: 1.038, z: 2.747}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+<<<<<<< HEAD
+  - {fileID: 7881289151256300188}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &7881289150486268058
+=======
   - {fileID: 8573622921495341770}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &8573622920725276876
+>>>>>>> Andrew-Payne
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 7881289150486268038}
+=======
   m_GameObject: {fileID: 8573622920725276880}
+>>>>>>> Andrew-Payne
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -60,7 +92,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 125
-  field of view: 65
+  field of view: 75
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -78,29 +110,49 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+<<<<<<< HEAD
+--- !u!124 &7881289150486268036
+=======
 --- !u!124 &8573622920725276882
+>>>>>>> Andrew-Payne
 Behaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 7881289150486268038}
+  m_Enabled: 1
+--- !u!81 &7881289150486268037
+=======
   m_GameObject: {fileID: 8573622920725276880}
   m_Enabled: 1
 --- !u!81 &8573622920725276883
+>>>>>>> Andrew-Payne
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 7881289150486268038}
+  m_Enabled: 1
+--- !u!114 &7881289150486268059
+=======
   m_GameObject: {fileID: 8573622920725276880}
   m_Enabled: 1
 --- !u!114 &8573622920725276877
+>>>>>>> Andrew-Payne
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 7881289150486268038}
+=======
   m_GameObject: {fileID: 8573622920725276880}
+>>>>>>> Andrew-Payne
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f07c76299008cd04a92af80d11c7166b, type: 3}
@@ -108,73 +160,141 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedH: 5
   speedV: 5
+<<<<<<< HEAD
+--- !u!1001 &3534808614989999180
+=======
 --- !u!1001 &990522179105991447
+>>>>>>> Andrew-Payne
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
+    m_TransformParent: {fileID: 7881289150486268057}
+    m_Modifications:
+    - target: {fileID: 6652343371224015980, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     m_TransformParent: {fileID: 8573622920725276879}
     m_Modifications:
     - target: {fileID: 8882411504358687585, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_Name
       value: Revolver
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.173
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.07800001
+      value: -0.078
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.19000006
+      value: 0.19
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.42768916
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.56305873
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.5632553
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.4275399
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -89.98
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -74.42
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+=======
     - target: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
+>>>>>>> Andrew-Payne
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 179.99998
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6652343371060293801, guid: 830b8705e5bb990488c34c7a1963649c,
+        type: 3}
+      propertyPath: fpsCam
+      value: 
+      objectReference: {fileID: 7881289150486268058}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 830b8705e5bb990488c34c7a1963649c, type: 3}
+--- !u!4 &7881289151256300188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6652343371224164048, guid: 830b8705e5bb990488c34c7a1963649c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3534808614989999180}
+=======
     - target: {fileID: 8882411504530806692, guid: 830b8705e5bb990488c34c7a1963649c,
         type: 3}
       propertyPath: fpsCam
@@ -187,4 +307,5 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8882411504358539741, guid: 830b8705e5bb990488c34c7a1963649c,
     type: 3}
   m_PrefabInstance: {fileID: 990522179105991447}
+>>>>>>> Andrew-Payne
   m_PrefabAsset: {fileID: 0}

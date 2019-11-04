@@ -5,19 +5,21 @@ public class Revolver : MonoBehaviour
 
     public float damage = 1f;
     public float range = 100f;
-    
+    public float impactForce = 30f;
     
 
     public Camera fpsCam;
-    public ParticleSystem muzzleFlash;
-    public AudioClip gunFire;
-    public AudioSource soundSource;
+    //public ParticleSystem muzzleFlash;
+    public GameObject impactEffect;
 
+    
+    
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            soundSource.clip = gunFire;
+            
+            //muzzleFlash.Play();
             Shoot();
         }
     }
@@ -27,15 +29,10 @@ public class Revolver : MonoBehaviour
         RaycastHit hit;
        if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            soundSource.Play();
-            muzzleFlash.Play();
+            Debug.Log(hit.transform.name);
 
             largeBottletarget target = hit.transform.GetComponent<largeBottletarget>();
             timeUpTarget timeTarget = hit.transform.GetComponent<timeUpTarget>();
-            smallTarget smallTarget = hit.transform.GetComponent<smallTarget>();
-            shotGlass shotGlass = hit.transform.GetComponent<shotGlass>();
-            reduceTimeTarget reduceTimeTarget = hit.transform.GetComponent<reduceTimeTarget>();
-
 
             if(target != null)
             {
@@ -45,18 +42,15 @@ public class Revolver : MonoBehaviour
             {
                 timeTarget.TakeDamage(damage);
             }
-            else if (smallTarget != null)
+
+            if (hit.rigidbody != null)
             {
-                smallTarget.TakeDamage(damage);
+                hit.rigidbody.AddForce(-hit.normal * impactForce);
             }
-            else if (shotGlass != null)
-            {
-                shotGlass.TakeDamage(damage);
-            }
-            else if (reduceTimeTarget != null)
-            {
-                reduceTimeTarget.TakeDamage(damage);
-            }
+
+            //GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            //Destroy(impactGO, 2f)
+
         }
 
     }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7558379844805138889
+--- !u!1 &2080328800442503800
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,14 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2224365115862204328}
-  - component: {fileID: 7747878911803488569}
-  - component: {fileID: 1639092738609546921}
-  - component: {fileID: 1335750332365289984}
-  - component: {fileID: 5386079741173726924}
-  - component: {fileID: 3895584295312762813}
-  - component: {fileID: 5849826018022765874}
-  - component: {fileID: 4898021813775899630}
+  - component: {fileID: 2080328800442653358}
+  - component: {fileID: 2080328800441344862}
+  - component: {fileID: 2080328800440288970}
+  - component: {fileID: 2080328801520270697}
+  - component: {fileID: 2080328801520270698}
+  - component: {fileID: 2080328801520270701}
   m_Layer: 0
   m_Name: largeBottleTarget
   m_TagString: Untagged
@@ -23,35 +21,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2224365115862204328
+--- !u!4 &2080328800442653358
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7558379844805138889}
+  m_GameObject: {fileID: 2080328800442503800}
   m_LocalRotation: {x: 0, y: 0.99691737, z: -0, w: -0.07845902}
+<<<<<<< HEAD
+  m_LocalPosition: {x: -0.27817017, y: 0.7578161, z: 4.6817813}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+=======
   m_LocalPosition: {x: -0.19472724, y: 0.8551696, z: 4.5461226}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+>>>>>>> Andrew-Payne
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 189, z: 0}
---- !u!33 &7747878911803488569
+--- !u!33 &2080328800441344862
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7558379844805138889}
+  m_GameObject: {fileID: 2080328800442503800}
   m_Mesh: {fileID: 4300000, guid: c4ed4d2d54ced7645b7ccd9e2fa858ea, type: 3}
---- !u!23 &1639092738609546921
+--- !u!23 &2080328800440288970
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7558379844805138889}
+  m_GameObject: {fileID: 2080328800442503800}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,13 +86,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!54 &1335750332365289984
+--- !u!54 &2080328801520270697
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7558379844805138889}
+  m_GameObject: {fileID: 2080328800442503800}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -99,32 +102,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &5386079741173726924
+--- !u!65 &2080328801520270698
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7558379844805138889}
+  m_GameObject: {fileID: 2080328800442503800}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.102853484, y: 0.25270784, z: 0.07825277}
   m_Center: {x: 0, y: 0.029000439, z: 0.000000054016716}
---- !u!114 &3895584295312762813
+--- !u!114 &2080328801520270701
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7558379844805138889}
+  m_GameObject: {fileID: 2080328800442503800}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 334151b48f0abea46852f30384e93f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+<<<<<<< HEAD
+  startForce: 8
+=======
   timeBDestroy: 15
   largeBottlePoints: 5
   BreakingGlass: {fileID: 8300000, guid: e7dd907087ab76242a8896e5eda0b70d, type: 3}
@@ -240,3 +246,4 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+>>>>>>> Andrew-Payne

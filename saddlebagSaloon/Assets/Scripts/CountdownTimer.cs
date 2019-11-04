@@ -10,7 +10,6 @@ public class CountdownTimer : MonoBehaviour
     float startingTime = 5f;
     public GameObject target;
     public GameObject gameTimer;
-    public GameObject scoreText;
 
 
     [SerializeField]
@@ -35,7 +34,6 @@ public class CountdownTimer : MonoBehaviour
             countDownText.enabled = false;
             target.SetActive(true);
             gameTimer.SetActive(true);
-            scoreText.SetActive(true);
         }
     }
 }

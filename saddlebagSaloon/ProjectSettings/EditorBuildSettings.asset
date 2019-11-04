@@ -6,18 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
+=======
     path: Assets/Scenes/DemoScene.unity
     guid: 32bc589a4b3ecb54fa4b57c5a85bdd1a
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+>>>>>>> Andrew-Payne
     path: Assets/Scenes/Main Game.unity
     guid: 5d5471248510e5945a95df196df0ba75
+  - enabled: 0
+    path: 
+    guid: 61baaa0c0d1b39143ad78a60fef034b6
   - enabled: 1
     path: Assets/Scenes/Scene1.unity
     guid: 27659ec2f620bdf4cbed8428185b36b0
   - enabled: 1
+    path: Assets/Scenes/DemoScene.unity
+    guid: 32bc589a4b3ecb54fa4b57c5a85bdd1a
+  - enabled: 1
+    path: Assets/Scenes/initialScene.unity
+    guid: 6b9de629e5fe4594e8841a3fa2a4786d
+  - enabled: 1
     path: Assets/Scenes/HowtoPlayScene.unity
-    guid: 0645fba10e1e52e4f91b19ef74338b21
+    guid: 4526dc28ec6a103408d4a40f48a1e03e
   m_configObjects: {}

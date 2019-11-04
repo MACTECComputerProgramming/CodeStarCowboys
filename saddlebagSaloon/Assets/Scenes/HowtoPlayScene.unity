@@ -23892,6 +23892,37 @@ RectTransform:
   m_AnchoredPosition: {x: 349, y: -142}
   m_SizeDelta: {x: 91.9, y: 58.6}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+--- !u!114 &1156529066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156529064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 34216657}
+          m_MethodName: SceneLoader
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+=======
+>>>>>>> Andrew-Payne
 --- !u!114 &1156529067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43025,7 +43056,6 @@ GameObject:
   - component: {fileID: 1664392686}
   - component: {fileID: 1664392688}
   - component: {fileID: 1664392687}
-  - component: {fileID: 1664392689}
   m_Layer: 5
   m_Name: How to Play
   m_TagString: Untagged
@@ -43092,6 +43122,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664392685}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
+=======
 --- !u!114 &1664392689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43120,6 +43152,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+>>>>>>> Andrew-Payne
 --- !u!1001 &1665241551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43203,7 +43236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 11.799988, y: 57.570007}
+  m_AnchoredPosition: {x: 11.8, y: 57.570004}
   m_SizeDelta: {x: -328.5, y: -115.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1666761993

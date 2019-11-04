@@ -30,7 +30,11 @@ public class GameTimer : MonoBehaviour
         if (currentTime <= 0)
         {
             gameCountDown.enabled = false;
+<<<<<<< HEAD
+            SceneManager.LoadScene(1);
+=======
             LoadScene.SceneLoader(2);
+>>>>>>> Andrew-Payne
         }
 
 
