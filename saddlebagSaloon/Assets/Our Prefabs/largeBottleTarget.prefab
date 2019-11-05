@@ -126,10 +126,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   timeBDestroy: 15
-  largeBottlePoints: 5
   BreakingGlass: {fileID: 8300000, guid: e7dd907087ab76242a8896e5eda0b70d, type: 3}
   MusicSource: {fileID: 5849826018022765874}
   particleEffect: {fileID: 7791394951022670333, guid: 7712471379baff548aff65d1372a0008,
+    type: 3}
+  scorePopUP: {fileID: 4183585358259387603, guid: 887a6f035b83cfd4cb6ea5c459de301c,
     type: 3}
   MeshRender: {fileID: 1639092738609546921}
 --- !u!82 &5849826018022765874

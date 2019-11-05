@@ -12,6 +12,7 @@ public class reduceTimeTarget : MonoBehaviour
     public AudioClip ChickenCluck;
     public AudioSource MusicScource;
     public GameObject particleEffect;
+    public GameObject scorePopUP;
     Rigidbody rb;
 
     void Start()
@@ -40,6 +41,7 @@ public class reduceTimeTarget : MonoBehaviour
             GameTimer.currentTime = GameTimer.currentTime -= timeSub;
             MusicScource.Play();
             Instantiate(particleEffect, transform.position, Quaternion.identity);
+            Instantiate(scorePopUP, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 

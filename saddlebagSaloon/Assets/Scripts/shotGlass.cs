@@ -10,6 +10,7 @@ public class shotGlass : MonoBehaviour
     public AudioClip BreakingGlass;
     public AudioSource MusicSource;
     public GameObject particleEffect;
+    public GameObject scorePopUp;
     public Component MeshRender;
     Rigidbody rb;
 
@@ -36,6 +37,7 @@ public class shotGlass : MonoBehaviour
             ScoreScript.scoreValue += 20;
             MusicSource.Play();
             Instantiate(particleEffect, transform.position, Quaternion.identity);
+            Instantiate(scorePopUp, transform.position, Quaternion.identity);
             Destroy(MeshRender);
             Destroy(gameObject, 1f);
         }

@@ -12,6 +12,7 @@ public class timeUpTarget : MonoBehaviour
     public AudioClip RipCard;
     public AudioSource MusicSource;
     public GameObject particleEffect;
+    public GameObject scorePopUp;
     public Component MeshRender;
     Rigidbody rb;
 
@@ -45,6 +46,7 @@ public class timeUpTarget : MonoBehaviour
         GameTimer.currentTime = GameTimer.currentTime + timeAdd;
         MusicSource.Play();
         Instantiate(particleEffect, transform.position, Quaternion.identity);
+        Instantiate(scorePopUp, transform.position, Quaternion.identity);
         Destroy(MeshRender);
         Destroy(gameObject, 1f);   
     }

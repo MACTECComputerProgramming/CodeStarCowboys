@@ -20843,6 +20843,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano
       objectReference: {fileID: 0}
+    - target: {fileID: 1953887750, guid: c7e1547eb9dfb7246b06ff265ab6b2d3, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 212890407869009453, guid: c7e1547eb9dfb7246b06ff265ab6b2d3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22330,7 +22334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPrefab:
-  - {fileID: 1611328387382946576, guid: 50f5be37a6b3d694d821fdba75519446, type: 3}
+  - {fileID: 3550055909683111219, guid: 50f5be37a6b3d694d821fdba75519446, type: 3}
   - {fileID: 7515758137234922618, guid: 200359018e002614181dab0353172016, type: 3}
   - {fileID: 7558379844805138889, guid: e2bd8fa2bfebf524c80738d6c824a66f, type: 3}
   - {fileID: 6202414532456481021, guid: f398d0dd7dafaf74f8b0d1bac15ef5c8, type: 3}

@@ -130,6 +130,8 @@ MonoBehaviour:
   MusicSource: {fileID: 3263537997124061145}
   particleEffect: {fileID: 2930962523094225681, guid: 942e94aa226ecda48b726122267a662a,
     type: 3}
+  scorePopUp: {fileID: 9203480011802968323, guid: f2eb831d790640441a3ea14d584519e4,
+    type: 3}
   MeshRender: {fileID: 2313302418717083915}
 --- !u!75 &4583247840693821241
 ConstantForce:
