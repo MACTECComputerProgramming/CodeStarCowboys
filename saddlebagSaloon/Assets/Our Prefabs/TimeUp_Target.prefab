@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  timeBDestroy: 15
+  timeBDestroy: 20
   speedR: 300
   timeAdd: 5
   RipCard: {fileID: 8300000, guid: 9c36476cad438214092741644b3eb462, type: 3}

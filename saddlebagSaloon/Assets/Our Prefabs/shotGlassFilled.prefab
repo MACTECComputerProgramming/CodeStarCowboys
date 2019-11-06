@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  timeBDestroy: 15
+  timeBDestroy: 20
   BreakingGlass: {fileID: 8300000, guid: b23dca0e99a5fe143a8fe0a125c66213, type: 3}
   MusicSource: {fileID: 2826984687833703496}
   particleEffect: {fileID: 7791394951022670333, guid: 7712471379baff548aff65d1372a0008,

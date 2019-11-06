@@ -8,9 +8,8 @@ public class exitSaloon : MonoBehaviour
     
     public void doQuit()
     {
-        Debug.Log("has quit game");
         Application.Quit();
-
+        Debug.Log("quit");
     }
 
 

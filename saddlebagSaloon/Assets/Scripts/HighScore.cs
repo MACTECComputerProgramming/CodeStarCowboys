@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HighScore : MonoBehaviour
 {
     public Text highScoreText;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +15,8 @@ public class HighScore : MonoBehaviour
 
         if(ScoreScript.scoreValue > PlayerPrefs.GetFloat("HighScore"))
         {
-            PlayerPrefs.SetFloat("HighScore", ScoreScript.scoreValue);
+            float newHighScore = ScoreScript.scoreValue;
+            PlayerPrefs.SetFloat("HighScore", newHighScore);
             PlayerPrefs.Save();
         }
 
