@@ -11,7 +11,6 @@ public class smallTarget : MonoBehaviour
     public AudioSource MusicSource;
     public GameObject particleEffect;
     public GameObject scorePopUp;
-    public Component MeshRender;
     Rigidbody rb;
     void Start()
     {
@@ -40,7 +39,6 @@ public class smallTarget : MonoBehaviour
         MusicSource.Play();
         Instantiate(particleEffect, transform.position, Quaternion.identity);
         Instantiate(scorePopUp, transform.position, Quaternion.identity);
-        Destroy(MeshRender);
-        Destroy(gameObject, 1f);
+        Destroy(gameObject);
     }
 }

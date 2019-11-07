@@ -22348,10 +22348,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPrefab:
   - {fileID: 6954722892640457078, guid: 50f5be37a6b3d694d821fdba75519446, type: 3}
-  - {fileID: 7515758137234922618, guid: 200359018e002614181dab0353172016, type: 3}
-  - {fileID: 7558379844805138889, guid: e2bd8fa2bfebf524c80738d6c824a66f, type: 3}
-  - {fileID: 6202414532456481021, guid: f398d0dd7dafaf74f8b0d1bac15ef5c8, type: 3}
-  - {fileID: 186650411700027927, guid: 8675b75bcddee7f4fab3644c39157385, type: 3}
+  - {fileID: 5428925144282204680, guid: 3899f8cfdae62514f954947c1afcb8b7, type: 3}
+  - {fileID: 8664637935122958977, guid: 589ba99a849a9924883a4f368a255ecc, type: 3}
+  - {fileID: 3517310842990223283, guid: d78e16656c9d24f4e8d070689830b1d5, type: 3}
+  - {fileID: 3725588772603143244, guid: 6d6941db1f49e2044b0b10d9612db192, type: 3}
   spawnPoints:
   - {fileID: 1371870015}
   - {fileID: 912078324}

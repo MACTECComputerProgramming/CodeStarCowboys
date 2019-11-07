@@ -19,7 +19,7 @@ public class reduceTimeTarget : MonoBehaviour
     {
         MusicScource.clip = ChickenCluck;
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.up * Random.Range(3f, 6f), ForceMode.Impulse);
+        rb.AddForce(transform.up * Random.Range(3f, 5f), ForceMode.Impulse);
     }
 
     void Update()

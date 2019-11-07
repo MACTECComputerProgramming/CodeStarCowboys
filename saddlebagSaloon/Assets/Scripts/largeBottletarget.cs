@@ -13,7 +13,6 @@ public class largeBottletarget : MonoBehaviour
     public AudioSource MusicSource;
     public GameObject particleEffect;
     public GameObject scorePopUP;
-    public Component MeshRender;
     Rigidbody rb;
 
 
@@ -47,7 +46,6 @@ public class largeBottletarget : MonoBehaviour
         Instantiate(particleEffect, transform.position, Quaternion.identity);
         Instantiate(scorePopUP, transform.position, Quaternion.identity);
         MusicSource.Play();
-        Destroy(MeshRender);
-        Destroy(gameObject, 1f);
+        Destroy(gameObject);
     }
 }
